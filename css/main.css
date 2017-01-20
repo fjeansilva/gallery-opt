@@ -1,0 +1,35 @@
+body, html {
+  padding: 0;
+  margin:0;
+}
+
+section.main {
+  width: 100%;
+}
+
+section.main img {
+  max-width: 100%;
+}
+
+.gallery article.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.gallery article.container img {
+  width: calc((100% - 15px) / 4);
+  margin-right: 5px;
+}
+
+.gallery article.container img:last-of-type {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 1440px) {
+  main {
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
